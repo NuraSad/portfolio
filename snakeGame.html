@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ainur's Projects | Snake Game</title>
+  </head>
+  <body>
+    <section id="introduction">
+      <h1>Snake Game</h1>
+      <div class="text-area">
+        <p>
+          The project is a browser-based Snake Game implemented using Vanilla
+          JavaScript and HTML Canvas.
+        </p>
+        <p>
+          Players control a snake navigating through a retro-inspired
+          environment, consuming food to grow longer while avoiding collisions
+          with obstacles and the snake's own tail.
+        </p>
+        <p>
+          With responsive controls and dynamic rendering, the game provides a
+          classic arcade experience directly in the web browser, complete with
+          immersive sound effects and background music to enhance the gameplay
+          atmosphere.
+        </p>
+        <a href="https://nurasad.github.io/snake-game/">Live Demo</a>
+        <a href="https://github.com/NuraSad/snake-game">Source Code</a>
+      </div>
+      <div class="images-area">
+        <img src="/images/start-snake-game.png" />
+        <!-- <img src="/images/finished-sort.png" /> -->
+      </div>
+    </section>
+    <section id="description">
+      <div class="text-area">
+        <h4>Purpose</h4>
+        <p>
+          I created this project during my learning of HTML5 Canvas. Initially,
+          it consisted solely of a canvas element on a white background, with a
+          snake moving inside a rectangular box. As development progressed, I
+          decided to enhance its visual appeal by adding a background image to
+          simulate an old arcade gaming station. Additionally, being a
+          passionate gamer myself, I incorporated ambient soundtracks and sound
+          effects to infuse the game with more fun and excitement.
+        </p>
+        <h4>Features</h4>
+        <ul class="dots">
+          <li>Classic snake gameplay with intuitive controls.</li>
+          <li>Responsive HTML5 Canvas rendering for smooth visuals.</li>
+          <li>Score tracking to challenge your high score.</li>
+          <li>
+            Background music and sound effects which can be muted/unmuted by
+            pressing M or using a checkbox.
+          </li>
+          <li>Game over detection with replay option for continuous fun.</li>
+        </ul>
+      </div>
+      <img src="/images/snake-game-gameplay.png" />
+      <img src="/images/snake-game-end.png" />
+      <div class="text-area">
+        <h4>Leasons Learned</h4>
+        <p>
+          During development, I encountered a couple of challenges along the
+          way. One notable issue arose from the disparity in display
+          characteristics, particularly with Apple products featuring Retina
+          displays. The higher pixel density led to blurry rendering of elements
+          drawn on the Canvas. To address this, I implemented a solution that
+          involved adjusting the Canvas dimensions based on the display ratio,
+          resulting in crisper visuals.
+        </p>
+        <p>
+          Another problem I faced was the restrictions imposed by the Chrome
+          Browser regarding background sounds. By default, Chrome prevents
+          background sounds from playing automatically unless the user interacts
+          with the page or until another sound is triggered. To bypass this
+          limitation, I devised a workaround by incorporating a brief silence
+          sound at the onset, effectively prompting the browser to unblock
+          subsequent sound playback.
+        </p>
+        <p>
+          Overall, these challenges presented valuable learning opportunities,
+          reinforcing my problem-solving skills and deepening my understanding
+          of web development intricacies.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

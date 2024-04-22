@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ainur's Projects | Snake Game</title>
+  </head>
+  <body>
+    <section id="introduction">
+      <h1>Recipe Book</h1>
+      <div class="text-area">
+        <p>
+            This web application offers users a platform for managing and sharing their favorite recipes. Project provides a user-friendly and intuitive interface to create, update, and organize culinary creations.
+        </p>
+        <h4>Technology Used</h4>
+            <p>The Recipe Book application utilizes the following technologies:</p>
+            <ul>
+
+            <li><span>Frontend:</span> React JS, react-router, axios, react-hook-form.</li>
+            <li><span>Backend:</span> Node JS, Express, jsonwebtoken, mongoose, cors.</li>
+            <li><span>Database:</span> MongoDB.</li>
+        </ul>
+        <a>Coming Soon</a>
+        <a href="https://github.com/NuraSad/recipe-book"
+          >Source Code: FrontEnd</a
+        >
+        <a href="https://github.com/NuraSad/recipe-book-api"
+          >Source Code: BackEnd</a
+        >
+      </div>
+      <div class="images-area">
+        <img src="/images/wihout like.png" />
+        <img src="/images/with like.png" />
+      </div>
+    </section>
+    <section id="description">
+      <div class="text-area">
+        <h4>Purpose</h4>
+        <p>
+          The idea for this project came to me when I realized that I needed a
+          place to store all the recipes I found online. While there are apps
+          available that offer such functionality, I found that I wasn't
+          satisfied with their recipe creation forms. They all had strict rules
+          about how recipes should be organized in order to be added. 
+          <p>So, I
+          decided to create my own recipe book. It has a user-friendly edit form
+          that doesn't require users to follow strict rules about how to create
+          their recipe. Additionally, users can upload the URL to an image of
+          their dish or simply select a stock image of the prepared recipe.</p> 
+          <p>This
+          web app utilizes client-side routing, implemented with react-router,
+          allowing users to seamlessly transition between pages. Users can also
+          like recipes from others, and these liked recipes will be displayed on
+          their individual profile page.</p>
+        </p>
+        <h4>Features</h4>
+        <ul>
+          <li>
+            <span>Recipe Management:</span> Registered users can create, update,
+            and delete their own recipes through a user-friendly edit form.
+          </li>
+          <li>
+            <span>User Authentication:</span> Users can register accounts and
+            log in securely using JWT Tokens.
+          </li>
+          <li>
+            <span>Add image:</span> Users can add URL to the trird-party website
+            that hosts their image of dish or similar to it.
+          </li>
+          <li>
+            <span>Favorite Recipes:</span> Users can add recipes created by
+            others to their favorites for easy access.
+          </li>
+          <li>
+            <span>Seacrh functionality:</span> Users can search for recipes by
+            dish name, making it easy to find specific recipes.
+          </li>
+        </ul>
+      </div>
+      <img src="/images/guest page.png" />
+      <img src="/images/create recipe.png" />
+      <div class="text-area">
+        <h4>Current Status</h4>
+        <p>
+          The current status of the project is in development. However, two
+          significant security issues have been identified in the web
+          application:
+        </p>
+        <p>
+          1. The authentication system utilizes local storage, which can be
+          easily manipulated by anyone, potentially granting unauthorized access
+          to the backend server. A solution to this issue would involve
+          revamping the entire system to use session cookies or integrating a
+          third-party authentication provider.
+        </p>
+        <p>
+          2. The insertion of URLs for images does not include validation to
+          verify the legitimacy of the inserted link. This leaves the
+          application vulnerable to malicious JavaScript code injection, which
+          could potentially compromise the security of the entire app. To
+          address this issue, I am currently developing a server where users can
+          upload images directly, and the server will store these images in a
+          third-party cloud provider.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

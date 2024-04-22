@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ainur's Projects | Sorting Vizualizer</title>
+  </head>
+  <body>
+    <section id="introduction">
+      <h1>Sorting Algorithms Vizualizer</h1>
+      <div class="text-area">
+        <p>
+          The application provides a user-friendly interface where users can
+          select from various sorting algorithms, including Bubble Sort, Merge
+          Sort, Quick Sort, and Heap Sort. Upon selection, the chosen algorithm
+          is visually represented on an array of elements to be sorted.
+        </p>
+        <p>
+          As the sorting process unfolds, the application dynamically updates
+          the visualization in real-time, allowing users to observe each step of
+          the algorithm's execution. Additionally, users can control the speed
+          of the animation to better understand the intricacies of each sorting
+          algorithm's behavior.
+        </p>
+        <p>
+          The project was crafted entirely from scratch, using React JS for the
+          frontend interface and incorporating refactored sorting functions
+          sourced from reputable web sources. This hands-on approach not only
+          ensured a deeper understanding of the algorithms but also allowed for
+          tailored integration within the application's architecture, resulting
+          in a seamless and efficient sorting visualization.
+        </p>
+        <a href="https://nurasad.github.io/sorting-visualizer/">Live Demo</a>
+        <a href="https://github.com/NuraSad/sorting-visualizer">Source Code</a>
+      </div>
+      <div class="images-area">
+        <img src="/images/SortViz.png" />
+        <img src="/images/finished-sort.png" />
+      </div>
+    </section>
+    <section id="description">
+      <div class="text-area">
+        <h4>Purpose</h4>
+        <p>
+          The purpose of the Sorting Algorithms Visualizer project is to create
+          an interactive and educational tool for exploring various sorting
+          algorithms in action. By providing real-time visualizations of sorting
+          processes, the project aims to enhance understanding and appreciation
+          of fundamental algorithms used in computer science. It serves as a
+          platform to experiment with different algorithms, observe their
+          behavior, and gain insights into their performance characteristics.
+        </p>
+        <h4>Features</h4>
+        <ul>
+          <li>
+            <span>"Generate New Array" Button:</span> Upon clicking this button,
+            a new row of vertical bars with varying heights is generated. These
+            bars represent the elements of an array, which will then be sorted
+            using the chosen algorithm.
+          </li>
+          <li>
+            <span>Animation Control:</span> During the visualization process,
+            all other functionality is disabled to focus on the sorting
+            animation. Once the animation stops, sorting buttons remain inactive
+            until a new array is generated, ensuring a smooth and uninterrupted
+            user experience.
+          </li>
+          <li>
+            <span>Speed Adjustment:</span> Users can adjust the speed of the
+            sorting process using a speed slider. This allows for customization
+            of the animation speed according to individual preferences,
+            facilitating a tailored and interactive learning experience.
+          </li>
+        </ul>
+      </div>
+      <img src="/images/merge-sort.png" />
+      <img src="/images/Quick-sort.png" />
+      <div class="text-area">
+        <h4>Leasons Learned</h4>
+        <p>
+          React DOM tends to collect all changes before updating, which is great
+          for efficiency but bad for the main purpose of this project. The
+          solution that I came up with was using the setTimeOut functionality to
+          give React time to update DOM and show changes in the array. I rewrote
+          some sorting algorithms to collect all changes that were made at each
+          step of sorting and then animated them.
+        </p>
+
+        <p>
+          During working on this project I learned how to correctly update state
+          of different components depending on the stage of process.
+        </p>
+        <h4>Drawbacks</h4>
+        <p>
+          One of the big drawbacks of this web application is that it is not
+          designed to be responsive because the vertical bars used to visually
+          represent the sorting process need to be of sufficient height and
+          quantity, which may not scale effectively on smaller screens.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
