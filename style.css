@@ -34,6 +34,33 @@ img {
   border-radius: 1.25rem;
 }
 
+#navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 2;
+  background-color: transparent;
+  transition: 0.3s ease background-color;
+}
+
+#navbar a {
+  font-size: 1.6rem;
+  color: #ffe969;
+  margin: 0.5rem 2rem;
+  transition: 0.3s ease;
+}
+
+#navbar a:hover,
+#navbar a.active {
+  color: white;
+  cursor: pointer;
+}
+
 #hero {
   height: 100vh;
 }
@@ -122,7 +149,7 @@ canvas {
 h3 {
   font-size: 4rem;
   color: black;
-  margin: 2rem 0;
+  margin: 4rem 0;
 }
 
 #about {
@@ -135,6 +162,7 @@ h3 {
 }
 
 #about h3 {
+  margin-top: 4rem;
   margin-bottom: 10vh;
 }
 
@@ -462,6 +490,12 @@ ul.dots {
 @media screen and (prefers-reduced-motion: reduce) {
   .animate {
     animation: none !important;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  html {
+    font-size: 80%;
   }
 }
 
