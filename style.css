@@ -147,8 +147,9 @@ canvas {
 }
 
 h3 {
-  font-size: 4rem;
-  color: black;
+  font-size: 4.3rem;
+  text-shadow: 0.125rem 0.125rem 0.125rem rgba(249, 233, 0);
+  color: #0d2f6c;
   margin: 4rem 0;
 }
 
@@ -196,13 +197,14 @@ img.portfolio {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  /* background-color: #154294;
+  padding: 2rem 1rem; */
 }
 
 #about p {
   font-size: 2.3rem;
   font-weight: 600;
-  text-shadow: 0.125rem 0.125rem 0.125rem rgba(249, 233, 0);
-  color: #154294;
+  color: #0c295e;
   /* width: 50%; */
 }
 
@@ -365,12 +367,25 @@ a {
 #introduction a {
   color: #356119;
   font-size: 1.5rem;
+  width: fit-content;
+  border-radius: 0.5rem;
+  padding: 0.8rem 0.5rem;
+  transition: all 0.3s ease;
 }
 
 #introduction a:first-of-type {
-  font-size: 1.5rem;
   color: #90141e;
   /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+}
+
+#introduction a:hover {
+  color: white;
+  background-color: #356119;
+}
+
+#introduction a:first-of-type:hover {
+  color: white;
+  background-color: #90141e;
 }
 
 .images-area {
