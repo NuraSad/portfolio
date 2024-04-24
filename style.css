@@ -82,10 +82,13 @@ h1 {
   animation-name: moveInLeft;
   animation-duration: 1.4s;
   animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
+  display: flex;
+  justify-content: center;
 }
 
 h1 span {
   color: #ede18b;
+  margin-left: 1.5rem;
 }
 
 h2 {
@@ -96,6 +99,57 @@ h2 {
   animation-name: moveInRight;
   animation-duration: 1.4s;
   animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
+}
+
+.star {
+  font-size: 3.8rem;
+  position: relative;
+  color: #ede18b;
+}
+
+.popup {
+  background: #fff;
+  color: #222;
+  width: 15rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 400;
+  font-style: italic;
+  position: absolute;
+  bottom: 0;
+  left: 0.625rem;
+  right: 2.5rem;
+  padding: 0.7rem 0.5rem;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.popup:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 0.938rem solid transparent;
+  border-right: 0.938rem solid transparent;
+  border-top: 0.938rem solid #fff;
+  position: absolute;
+  bottom: -0.125rem;
+  left: -0.563rem;
+  right: -0.313rem;
+  transform: rotate(-191deg);
+}
+
+.star:hover {
+  cursor: pointer;
+}
+
+.star:hover span {
+  bottom: 6.25rem;
+  visibility: visible;
+  opacity: 0.9;
 }
 
 #hero .cta {
@@ -545,6 +599,28 @@ ul.dots {
 @media only screen and (max-width: 778px) {
   html {
     font-size: 40%;
+  }
+
+  .popup {
+    left: -8.375rem;
+    right: 0;
+  }
+
+  .popup:before {
+    bottom: -1rem;
+    left: 6.8rem;
+    right: -0.313rem;
+    transform: none;
+  }
+
+  .star:hover {
+    cursor: pointer;
+  }
+
+  .star:hover span {
+    bottom: 7.25rem;
+    visibility: visible;
+    opacity: 0.9;
   }
 
   article.project:nth-child(2) {
