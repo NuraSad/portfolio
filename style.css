@@ -39,6 +39,7 @@ img {
   width: 100%;
   top: 0;
   left: 50%;
+  padding: 0 1rem;
   transform: translateX(-50%);
   display: flex;
   justify-content: flex-end;
@@ -256,7 +257,7 @@ img.portfolio {
 }
 
 #about p {
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #0c295e;
   /* width: 50%; */
@@ -365,7 +366,7 @@ a {
 }
 
 #contact a span {
-  color: #ffe969;
+  color: #fce149;
   font-weight: 800;
   transition: 0.3s ease;
   transition-property: color;
@@ -579,6 +580,10 @@ ul.dots {
 @media only screen and (max-width: 1500px) {
   html {
     font-size: 80%;
+  }
+
+  .images-area {
+    width: 90%;
   }
 }
 

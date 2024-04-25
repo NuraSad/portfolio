@@ -3,37 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width , initial-scale=1.0, minimum-scale=1"
+    />
+    <link rel="icon" href="/images/favicon.png" />
     <link rel="stylesheet" href="style.css" />
-    <title>Ainur's Projects | Sorting Vizualizer</title>
+    <title>Ainur's Projects | Sorting Visualizer</title>
   </head>
   <body>
     <section id="introduction">
-      <h1>Sorting Algorithms Vizualizer</h1>
+      <h1>Sorting Algorithms Visualizer</h1>
       <div class="text-area">
         <p>
-          The application provides a user-friendly interface where users can
-          select from various sorting algorithms, including Bubble Sort, Merge
-          Sort, Quick Sort, and Heap Sort. Upon selection, the chosen algorithm
-          is visually represented on an array of elements to be sorted.
+          The application provides an interface where users can choose from four
+          sorting algorithms: Bubble Sort, Merge Sort, Quick Sort, and Heap
+          Sort, and observe how the selected algorithm is visually represented
+          on an array of elements.
         </p>
         <p>
           As the sorting process unfolds, the application dynamically updates
-          the visualization in real-time, allowing users to observe each step of
-          the algorithm's execution. Additionally, users can control the speed
-          of the animation to better understand the intricacies of each sorting
+          the visualization, allowing users to observe each step of the
+          algorithm's execution. Additionally, users can set the speed of the
+          animation to better understand the intricacies of each sorting
           algorithm's behavior.
         </p>
         <p>
-          The project was crafted entirely from scratch, using React JS for the
-          frontend interface and incorporating refactored sorting functions
-          sourced from reputable web sources. This hands-on approach not only
-          ensured a deeper understanding of the algorithms but also allowed for
-          tailored integration within the application's architecture, resulting
-          in a seamless and efficient sorting visualization.
+          This project was built entirely from scratch using React JS. Sorting
+          functions were refactored from existing web sources for integration.
+          This hands-on approach ensured a deeper understanding of the
+          algorithms and seamless integration within the application's
+          architecture.
         </p>
-        <a href="https://nurasad.github.io/sorting-visualizer/">Live Demo</a>
-        <a href="https://github.com/NuraSad/sorting-visualizer">Source Code</a>
+        <a href="https://nurasad.github.io/sorting-visualizer/" target="_blank"
+          >Live Demo</a
+        >
+        <a href="https://github.com/NuraSad/sorting-visualizer" target="_blank"
+          >Source Code</a
+        >
       </div>
       <div class="images-area">
         <img src="/images/SortViz.png" />
@@ -81,11 +88,11 @@
         <h4>Leasons Learned</h4>
         <p>
           React DOM tends to collect all changes before updating, which is great
-          for efficiency but bad for the main purpose of this project. The
-          solution that I came up with was using the setTimeOut functionality to
-          give React time to update DOM and show changes in the array. I rewrote
-          some sorting algorithms to collect all changes that were made at each
-          step of sorting and then animated them.
+          for efficiency but bad for the animation, which is the main driver of
+          this project. The solution that I came up with was using the
+          setTimeOut functionality to give React time to update DOM and show
+          changes in the array. I rewrote some sorting algorithms to collect all
+          changes that were made at each step of sorting and then animated them.
         </p>
 
         <p>
