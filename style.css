@@ -24,8 +24,9 @@ a {
   text-decoration: none;
 }
 
-section {
+section:not(:first-of-type) {
   width: 100vw;
+  padding-top: 1.5rem;
 }
 
 img {
@@ -39,7 +40,7 @@ img {
   width: 100%;
   top: 0;
   left: 50%;
-  padding: 0 1rem;
+  padding: 1rem 1rem;
   transform: translateX(-50%);
   display: flex;
   justify-content: flex-end;
@@ -75,6 +76,26 @@ img {
   position: relative;
 }
 
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#hero p:not(.star) {
+  font-size: 2.2rem;
+  color: aliceblue;
+  width: 70%;
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 400;
+  animation-name: moveInBottom;
+  animation-duration: 1.4s;
+  animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
+}
+
 h1 {
   font-size: 5rem;
   color: aliceblue;
@@ -85,6 +106,7 @@ h1 {
   animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 h1 span {
@@ -278,20 +300,25 @@ img.portfolio {
   /* background-color: #def2ff;
   border-radius: 20px; */
   padding: 3rem 0;
-  row-gap: 5rem;
+  row-gap: 7rem;
 }
 
 article.project {
   width: 100%;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   row-gap: 0.8rem;
   column-gap: 2rem;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   position: relative;
+  /* border: solid 1px #154294; */
+  border-radius: 1.25rem;
+  background-color: #ceeafb;
+  box-shadow: 5px 5px 1.5rem #154294;
 }
-article.project:not(:last-child)::after {
+/* article.project:not(:last-child)::after {
   content: "";
   display: block;
   width: 60%;
@@ -302,14 +329,22 @@ article.project:not(:last-child)::after {
   transform: translateX(-50%);
   background-color: black;
   opacity: 0.5;
-}
+} */
 
 div.description {
   flex-basis: 40%;
   flex-grow: 2;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  row-gap: 1rem;
+  row-gap: 2rem;
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 1rem;
 }
 
 h4 {
@@ -322,6 +357,19 @@ div.description p {
 
 .project img {
   min-width: 300px;
+  /* max-width: 100%; */
+  /* height: 100%; */
+  /* flex: 1 50%; */
+}
+
+.project img:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.project img:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .project a {
@@ -331,7 +379,6 @@ div.description p {
   border-radius: 0.5rem;
   padding: 0.8rem 0.5rem;
   color: #154294;
-  text-decoration: underline 0.125rem #ffe969;
   transition: all 0.3s ease;
 }
 
@@ -347,12 +394,38 @@ div.description p {
 }
 
 #contact {
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
+  background-image: url(/images/cat\ on\ the\ moon.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50%;
+  padding-left: 5rem;
+  padding-bottom: 15rem;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#contact h3 {
+  text-shadow: 0.125rem 0.125rem 0.125rem rgb(95, 154, 255);
+  color: aliceblue;
+  margin: 1rem 0;
 }
 
 #contact p {
   font-size: 1.8rem;
   margin-top: 1.5rem;
+  color: aliceblue;
 }
 
 a {
@@ -361,7 +434,7 @@ a {
 
 #contact a {
   font-size: 2rem;
-  color: #154294;
+  color: aliceblue;
   margin-top: 0.8rem;
 }
 
@@ -373,11 +446,11 @@ a {
 }
 
 #contact a:hover {
-  text-decoration: underline 0.313rem #ffe969;
+  color: #ffe969;
 }
 
 #contact a:hover span {
-  color: #154294;
+  color: aliceblue;
 }
 
 /* Project's page style */
@@ -557,6 +630,18 @@ ul.dots {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
