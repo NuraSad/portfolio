@@ -353,7 +353,7 @@ div.description li {
   font-size: 1.8rem;
   display: list-item;
   margin-left: 1rem;
-  padding-left: 0.2rem;
+  padding-left: 0.4rem;
 }
 
 div.description li::marker {
@@ -700,7 +700,7 @@ ul.dots {
   font-weight: bold;
 }
 
-.job-card-footer {
+.project-footer {
   width: 100%;
   background-color: #154294;
   height: fit-content;
@@ -711,23 +711,23 @@ ul.dots {
   padding: 0.8rem 1rem 0.8rem 0;
 }
 
-.job-card-footer a {
+.project-footer a {
   font-size: 1.3rem;
   color: #ffe969;
   margin: 0.5rem 1rem;
 }
 
-.job-card-footer a:first-of-type::before {
+.project-footer a:first-of-type::before {
   content: "<";
   margin-right: 0.2rem;
 }
 
-.job-card-footer a:last-of-type::after {
+.project-footer a:last-of-type::after {
   content: ">";
   margin-left: 0.2rem;
 }
 
-.job-card-footer a:hover {
+.project-footer a:hover {
   color: white;
 }
 
