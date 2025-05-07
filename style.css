@@ -840,9 +840,9 @@ ul.dots {
     opacity: 0.9;
   }
 
-  article.job-card:nth-child(2) {
+  /* article.job-card:nth-child(2) {
     flex-wrap: wrap-reverse;
-  }
+  } */
 
   .images-area img:first-child {
     margin-bottom: 3rem;
