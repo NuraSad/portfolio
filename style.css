@@ -847,6 +847,7 @@ ul.dots {
   article.job-card img:first-child {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    border-top-right-radius: 1.25rem;
   }
 
   .images-area img:first-child {
