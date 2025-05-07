@@ -844,7 +844,7 @@ ul.dots {
     flex-wrap: wrap-reverse;
   } */
 
-  article.job-card img {
+  article.job-card img:first-child {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
